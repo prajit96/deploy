@@ -15,6 +15,7 @@ noteRouter.post("/create",async(req,res)=>{
     }
 })
 
+
 noteRouter.get("/",async(req,res)=>{
     try{
         const notes=await NoteModel.find({userID:req.body.userID})
